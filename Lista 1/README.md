@@ -56,13 +56,15 @@ O arquivo `main.py` deve ser utilizado para testar as funções desenvolvidas no
 
 ## Questões
 
-### 1. `add_person(data, name, age, hobbies)`
+### 1. `add_person(data, name, age, city, hobbies)`
 
-Escreva uma função que recebe o conjunto de dados, uma string (representando o nome de uma pessoa), um inteiro (representando a idade) e uma lista de strings (representando os hobbies dessa pessoa) e retorne o conjunto de dados com essa pessoa adicionada.
+Escreva uma função que recebe o conjunto de dados, uma string (representando o nome de uma pessoa), um inteiro (representando a idade), uma string (representando a cidade de uma pessoa) e uma lista de strings (representando os hobbies dessa pessoa) e retorne o conjunto de dados com essa pessoa adicionada.
 
 Nessa questão, se atentem ao fato de que o nome dessa pessoa pode já existir no conjunto de dados. Nesse caso, a função deve informar o usuário que já existe uma pessoa listada com esse nome e retornar o conjunto de dados sem alterações.
 
 Caso a idade seja menor que 0 ou maior que 100, a função deve lançar uma exceção do tipo `ValueError`, que deve ser tratada e informar o usuário que a idade deve ser um inteiro entre 0 e 100. Nesse caso, a função deve retornar o conjunto de dados sem alterações.
+
+Caso o valor passado para o argumento city não seja uma string, a função deve lançar uma exceção do tipo `TypeError`, que deve ser tratada e informar o usuário que o tipo do valor passado para o argumento city não é uma string.
 
 Caso a lista de hobbies seja vazia, a função deve lançar uma exceção do tipo `ValueError`, que deve ser tratada e informar o usuário que a lista de hobbies não pode ser vazia. Nesse caso, a função deve retornar o conjunto de dados sem alterações.
 
